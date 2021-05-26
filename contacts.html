@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Gaurav Priya | Contacts</title>
+<meta charset="utf-8">
+<link rel="stylesheet" href="css/reset.css" type="text/css" media="all">
+<link rel="stylesheet" href="css/layout.css" type="text/css" media="all">
+<link rel="stylesheet" href="css/style.css" type="text/css" media="all">
+<script src="js/jquery-1.6.js" ></script>
+<script src="js/cufon-yui.js"></script>
+<script src="js/cufon-replace.js"></script>
+<script src="js/Josefin_Sans_400.font.js"></script>
+<script src="js/Tangerine_700.font.js"></script>
+<script src="js/atooltip.jquery.js"></script>
+<script src="js/jquery.nivo.slider.pack.js"></script>
+<script src="js/script.js"></script>
+<!--[if lt IE 9]>
+<script src="js/html5.js"></script>
+<style type="text/css">.aToolTip, .box1, .box1 .inner, .button, .button strong{behavior:url("js/PIE.htc");}</style>
+<![endif]-->
+</head>
+<body id="page6">
+<div class="body1">
+  <div class="main">
+    <!-- header -->
+    <header>
+      <div class="wrapper">
+        <ul id="icons">
+          <li><a href="#" class="normaltip"><img src="images/icon1.png" alt=""></a></li>
+          <li><a href="#" class="normaltip"><img src="images/icon2.png" alt=""></a></li>
+          <li><a href="#" class="normaltip"><img src="images/icon3.png" alt=""></a></li>
+        </ul>
+      </div>
+      <div class="wrapper">
+        <h1><a href="index.html" id="logo"></a></h1>
+        <nav>
+          <ul id="menu">
+            <li class="first"><a href="index.html">Home </a></li>
+            <li><a href="lisa.html">Priya</a></li>
+            <li><a href="tom.html">Gaurav</a></li>
+          
+            <li><a href="album.html">Album</a></li>
+            <li id="menu_active"><a href="contacts.html">Contacts</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!-- / header -->
+  </div>
+</div>
+<div class="body3">
+  <div class="main">
+    <!-- content -->
+    <article id="content">
+      <div class="wrapper">
+        <div class="pad">
+          <div class="wrapper">
+            <section class="col1">
+              <h2>Contact <span>Form</span></h2>
+              <form id="ContactForm" action="#">
+                <div>
+                  <div  class="wrapper"> <span>Your Name:</span>
+                    <input type="text" class="input" >
+                  </div>
+                  <div  class="wrapper"> <span>Your E-mail:</span>
+                    <input type="text" class="input" >
+                  </div>
+                  <div  class="textarea_box"> <span>Your Message:</span>
+                    <textarea name="textarea" cols="1" rows="1"></textarea>
+                  </div>
+                  <a href="#" class="button"><strong>Send</strong></a> <a href="#" class="button"><strong>Clear</strong></a> </div>
+              </form>
+            </section>
+            <section class="col2 pad_left2">
+              <h2>Our <span>Contacts</span></h2>
+              <p class="pad_bot1">India UP</p>
+              <div class="wrapper pad_bot1">
+                <p class="address"> Freephone:<br>
+                  Telephone:<br>
+                  E-mail: </p>
+                <p> -91 8299890048<br>
+                  +91 7880511099<br>
+                  <a href="#">USAPMKING@gmail.com</a> </p>
+              </div>
+              <h2>Gaurav <span>Info</span></h2>
+              <p class="pad_bot1"> village Udayakaranpur PIn 221314</p>
+            </section>
+          </div>
+        </div>
+      </div>
+    </article>
+    <!-- content / -->
+  </div>
+</div>
+<div class="body2">
+  <div class="main">
+    <!-- footer -->
+    <footer>Copyright &copy; <a href="#">GauraV Tripathi</a> All Rights Reserved<br>
+      Design by <a target="_blank" href="http://www.krish41.blogspot.com/">GauraV Tripathi</a></footer>
+    <!-- / footer -->
+  </div>
+</div>
+<script>Cufon.now();</script>
+<script>
+$(window).load(function () {
+    $('.slider').nivoSlider({
+        effect: 'fold', //Specify sets like: 'fold,fade,sliceDown, sliceDownLeft, sliceUp, sliceUpLeft, sliceUpDown, sliceUpDownLeft' 
+        slices: 17,
+        animSpeed: 500,
+        pauseTime: 8000,
+        startSlide: 0, //Set starting Slide (0 index)
+        directionNav: true, //Next & Prev
+        directionNavHide: false, //Only show on hover
+        controlNav: true, //1,2,3...
+        controlNavThumbs: false, //Use thumbnails for Control Nav
+        controlNavThumbsFromRel: false, //Use image rel for thumbs
+        controlNavThumbsSearch: '.jpg', //Replace this with...
+        controlNavThumbsReplace: '_thumb.jpg', //...this in thumb Image src
+        keyboardNav: true, //Use left & right arrows
+        pauseOnHover: true, //Stop animation while hovering
+        manualAdvance: false, //Force manual transitions
+        captionOpacity: 1, //Universal caption opacity
+        beforeChange: function () {},
+        afterChange: function () {
+            Cufon.refresh();
+        },
+        slideshowEnd: function () {} //Triggers after all slides have been shown
+    });
+});
+</script>
+</body>
+</html>
